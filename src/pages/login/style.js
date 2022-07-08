@@ -4,14 +4,23 @@ const StyledLogin = styled.form`
 background-color: rgba(173,216,230,0.7);
 border-radius: 50%;
 display: flex;
-padding: 6rem;
+justify-content: center;
+align-items: center;
 flex-direction: column;
 gap: 1rem;
+width: 450px;
+height: 450px;
+
 
 `;
 
 export const LoginH1 = styled.h1`
-font-size:3rem;
+font-size:2rem;
+
+`;
+export const LoginImg = styled.img`
+    width: 150px;
+    height: 150px;
 `;
 
 export const LoginInput = styled.input`
