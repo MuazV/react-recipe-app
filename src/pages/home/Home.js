@@ -1,8 +1,12 @@
 import React, { useState, useEffect } from "react";
+import RecipeCard from "./RecipeCard";
+import StyledDiv, { StyledInput, StyledSelect, StyDiv, DivBot } from "./style";
 
 const Home = () => {
   const [fname, setFname] = useState("");
   const [foods, setFoods] = useState([]);
+
+  
 
   const url = `https://api.edamam.com/api/recipes/v2?type=public&q=${fname}&app_id=e60ff273&app_key=19309b4ff8f037f7a7995e4dd6fe2773`;
 
@@ -22,46 +26,46 @@ const Home = () => {
   }, []);
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-    fetchData()
-    setFname("")
-  }
+    e.preventDefault();
+    fetchData();
+    setFname("");
+  };
 
   return (
     <div>
-      <h2>Food App</h2>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          name="food"
-          id="food"
-          value={fname}
-          onChange={(e) => setFname(e.target.value)}
-        />
-        <input type="submit" value="Search" />
-        <select>
-          <option value="grapefruit">
-            Grapefruit
-          </option>
-          <option value="lime">Lime</option>
-          <option defaultValue value="cocon">
-            Cocon
-          </option>
-          <option value="mango">Mango</option>
-        </select>
-      </form>
-
-      <div>
-        {foods?.map((food, index) => {
+      <StyledDiv>
+        <h2>Food App</h2>
+        <form onSubmit={handleSubmit}>
+          <StyledInput
+            type="text"
+            name="food"
+            id="food"
+            value={fname}
+            onChange={(e) => setFname(e.target.value)}
+          />
+          <StyledInput type="submit" value="Search" />
+          <StyledSelect>
+            <option value="Breakfast">Breakfast</option>
+            <option value="Lunch">Lunch</option>
+            <option defaultValue value="Dinner">
+              Dinner
+            </option>
+            <option value="Snack">Snack</option>
+            <option value="Teatime">Teatime</option>
+          </StyledSelect>
+        </form>
+      </StyledDiv>
+      <StyDiv>
+        {/* {foods.filter((f) => f.recipe.mealType[0] == mt ).map((food, index) => { */}
+        {foods?.map((food) => {
+          const {totalWeight} = food.recipe
           return (
-            <div key={index}>
-              <h4>{food.recipe.label}</h4>
-              <img src={food.recipe.images.SMALL.url} alt="img" />
-              <button>Details</button>
-            </div>
+            <DivBot>
+              <RecipeCard key={totalWeight} food ={food}/>
+            </DivBot>
           );
         })}
-      </div>
+      </StyDiv>
     </div>
   );
 };

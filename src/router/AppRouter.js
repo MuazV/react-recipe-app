@@ -8,19 +8,18 @@ import Navbar from "../components/navbar/Navbar";
 
 const AppRouter = () => {
   return (
-    <>
-      <BrowserRouter>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/Login" element={<Login />} />
+      </Routes>
       <Navbar />
-        <Routes>
-          <Route path="/" element={<Login />} />
-          <Route path="/Login" element={<Login />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/About" element={<About />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-      
-    </>
+      <Routes>
+        <Route path="/home" element={<Home />}/>
+        <Route path="/About" element={<About />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 
