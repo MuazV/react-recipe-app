@@ -13,11 +13,10 @@ const RecipeCard = ({food}) => {
   return (
     <DivBot
     style={{border: "none" }}
-    onClick={() => navigate(`${label}`, { state: food.recipe })}
     >
       <h4>{label}</h4>
       <img src={url} alt="img" />
-      <button>Details</button>
+      <button onClick={() => navigate(`/Details/`, { state: food.recipe })}>Details</button>
     </DivBot>
   );
 };
