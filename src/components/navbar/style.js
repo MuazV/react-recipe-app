@@ -6,7 +6,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 font-size: 1.2rem;
-background-color: blanchedalmond;
+background-color: #04D9C4;
 
 `;
 export const Nava = styled.a`

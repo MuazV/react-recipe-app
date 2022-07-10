@@ -5,6 +5,7 @@ const StyledDiv = styled.div`
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    background-color: #0388A6;
 
 `;
 
@@ -15,12 +16,18 @@ margin:0.5rem;
 export const StyledSelect = styled.select`
 padding: 0.1rem;
 `;
+// color: #023373; 
+// color: #03588C; 
+// color: #04ADBF; 
+// color: #04D9C4; 
+// color: #0388A6; 
 
 export const StyDiv = styled.div`
 display: grid;
 grid-template-columns: repeat(4, 1fr);
 gap: 1rem;
 padding: 1rem;
+
 @media (max-width:768px){
         grid-template-columns: repeat(2, 1fr);
         gap: 0.5rem;
@@ -36,7 +43,7 @@ export const DivBot = styled.div`
     align-items: center;
     padding-bottom: 0.5rem;
     text-align: center;
-    cursor: pointer;
+    background-color: #0388A6;
    
 `;
 

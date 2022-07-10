@@ -23,7 +23,7 @@ console.log(password);
         <LoginH1>{"<ED8EN/>"} <span>RECIPE<span/></span></LoginH1>
         <LoginInput type="text" placeholder='USERNAME' required onChange={(e) => setUsername(e.target.value)} />
         <LoginInput type="password" placeholder='PASSWORD' required onChange={(e) => setPassword(e.target.value) }/>
-        <LoginInput type="submit" value="LOGIN" />
+        <LoginInput className='submit' type="submit" value="LOGIN" />
     </StyledLogin>
     </LoginDiv>
   )

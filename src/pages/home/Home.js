@@ -32,7 +32,7 @@ const Home = () => {
   };
 
   return (
-    <div>
+    <div style={{backgroundColor: "#04D9C4", color: "#023373"}}>
       <StyledDiv>
         <h2>Food App</h2>
         <form onSubmit={handleSubmit}>
