@@ -7,6 +7,7 @@ justify-content: space-between;
 align-items: center;
 font-size: 1.2rem;
 background-color: #04D9C4;
+height: 10vh;
 
 `;
 export const Nava = styled.a`

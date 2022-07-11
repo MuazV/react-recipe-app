@@ -10,14 +10,12 @@ import Details from "../pages/details/Details";
 const AppRouter = () => {
   return (
     <BrowserRouter>
+      {/* <Navbar /> */}
       <Routes>
-        <Route path="/" element={<Login />} />
+      <Route path="/" element={<Login />} />
         <Route path="/Login" element={<Login />} />
-      </Routes>
-      <Navbar />
-      <Routes>
-        <Route path="/home" element={<Home />}/>
         <Route path="/About" element={<About />} />
+        <Route path="/home" element={<Home />}/>
         <Route path="/Details" element={<Details />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

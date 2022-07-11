@@ -7,7 +7,7 @@ export const StyledButton = styled.button`
     border: 2px solid #bbb;
     padding: 1rem 1.5rem;
     cursor: pointer;
-    margin: 1rem;
+    margin: 0.7rem;
     &:hover {
         transform: scale(0.95);
         opacity: 0.8;
@@ -29,7 +29,12 @@ const StyledDiv = styled.div`
     & > div{
     display: flex;
     justify-content: space-evenly;
-    padding-top: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    overflow: hidden;
+    &.buttons{
+        justify-content: center;
+    }
     img {
         width: 200px;
     }
