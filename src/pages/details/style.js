@@ -1,5 +1,5 @@
 import styled from "styled-components";
-/* Color Theme Swatches in Hex */
+import {device} from '../media'
 
 export const StyledButton = styled.button`
     background-color: ${({primary}) => (primary ? "#023373" : "#03588C")};
@@ -21,6 +21,22 @@ padding: 1rem;
 border: 2px solid black;
 align-items: center;
 justify-items: center;
+  @media ${device.tablet} {
+    grid-template-columns: auto;
+    gap: 0.5rem;
+    img {
+        width: 200px;
+        
+    }
+  }
+  @media ${device.mobileL} {
+    grid-template-columns: auto;
+    gap: 0.2rem;
+  }
+  img {
+        width: 200px;
+    }
+
 
 `;
 
@@ -38,8 +54,17 @@ const StyledDiv = styled.div`
     img {
         width: 200px;
     }
-}
+    @media (max-width:768px) {
+    text-align: center;
+    word-wrap: break-word;
+    font-size: 0.8rem;
+    img {
+        width: 150px;
+        padding-right:1rem ;
+    }
     
+}
+}
 
 `;
 

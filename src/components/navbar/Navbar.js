@@ -18,7 +18,7 @@ const Navbar = () => {
         <div>
         <NavLink style={{textDecoration:"none"}}to="/About" >ABOUT</NavLink>
         <Nava href="https://github.com/MuazV">GITHUB</Nava>
-        <NavLink style={{textDecoration:"none", marginRight:"3rem"}} to="/">LOGOUT</NavLink>
+        <NavLink style={{textDecoration:"none", marginRight:"2rem"}} to="/">LOGOUT</NavLink>
         </div>
     </NavMainDiv>
   )
