@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react";
 import RecipeCard from "./RecipeCard";
 import StyledDiv, { StyledInput, StyledSelect, StyDiv, DivBot } from "./style";
 
-const Home = () => {
+const Home = (props) => {
   const [fname, setFname] = useState("");
   const [foods, setFoods] = useState([]);
 
-  
+  props.funcNav(true);
 
   const url = `https://api.edamam.com/api/recipes/v2?type=public&q=${fname}&app_id=e60ff273&app_key=19309b4ff8f037f7a7995e4dd6fe2773`;
 

@@ -16,7 +16,7 @@ const RecipeCard = ({food}) => {
     >
       <h4>{label}</h4>
       <img src={url} alt="img" />
-      <button style={{ cursor: "pointer"}} onClick={() => navigate(`/Details`, { state: food.recipe })}>Details</button>
+      <button style={{ cursor: "pointer"}} onClick={() => navigate(`/Details`, { state: food.recipe })}>View More</button>
     </DivBot>
   );
 };
