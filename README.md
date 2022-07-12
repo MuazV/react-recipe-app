@@ -11,4 +11,4 @@ Learned with this Project
 ***
 [Click Here To See All Page...](https://recipe-app2022.netlify.app/)
 ***
-
+![](https://github.com/MuazV/react-recipe-app/blob/master/src/assets/Animation.gif)
