@@ -7,7 +7,7 @@ const Home = (props) => {
   const [foods, setFoods] = useState([]);
   const [meal, setMeal] = useState("breakfast")
   
-
+console.log(meal);
 
   props.funcNav(true);
 
