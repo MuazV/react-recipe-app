@@ -18,10 +18,10 @@ const AppRouter = () => {
       <Routes>
         <Route path="/" element={<Login funcNav={setNav}/>} />
         <Route path="/Login" element={<Login />} />
-        <Route path="/About" element={<About />} />
+        <Route path="/About" element={<About funcNav={setNav}/>} />
         <Route path="/home" element={<Home funcNav={setNav} />} />
-        <Route path="/Details" element={<Details />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="/Details" element={<Details funcNav={setNav}/>} />
+        <Route path="*" element={<NotFound funcNav={setNav}/>} />
       </Routes>
     </BrowserRouter>
   );

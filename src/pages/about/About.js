@@ -2,7 +2,9 @@ import React from 'react';
 import coding from '../../assets/coding.svg';
 import StyledDiv from './style';
 
-const About = () => {
+const About = (props) => {
+
+  props.funcNav(true);
   return (
     <StyledDiv>
       <div><img src={coding} alt="" /></div>

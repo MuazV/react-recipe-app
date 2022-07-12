@@ -3,9 +3,11 @@ import { useNavigate } from 'react-router-dom';
 import error from '../assets/404.png';
 import { StyledButton } from './details/style';
 
-const NotFound = () => {
+const NotFound = (props) => {
 
   const navigate = useNavigate()
+
+  props.funcNav(true);
 
   return (
     <div style={{display:"flex", justifyContent: "center", alignItems: "center", flexDirection: "column"}}>

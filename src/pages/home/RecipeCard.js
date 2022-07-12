@@ -10,6 +10,7 @@ const RecipeCard = ({food}) => {
       SMALL: { url },
     },
   } = food.recipe;
+
   return (
     <DivBot
     style={{border: "none" }}

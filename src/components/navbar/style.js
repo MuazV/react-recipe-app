@@ -12,15 +12,15 @@ height: 10vh;
 @media ${device.tablet} {
     font-size: 0.8rem;
   }
-
 `;
+
+
 export const Nava = styled.a`
 text-decoration: none;
 margin: 0 3rem;
 @media ${device.tablet} {
     margin: 0 1rem;
   }
-
 `;
 
 export const Styledh3 = styled.h3`

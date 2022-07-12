@@ -3,7 +3,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import StyledDiv, { StyledButton, StyledMain } from "./style";
 import diet from "../../assets/diet.svg";
 
-const Details = () => {
+const Details = (props) => {
   const navigate = useNavigate();
   const location = useLocation();
   const {
@@ -22,8 +22,8 @@ const Details = () => {
     },
     ingredientLines,
   } = location.state;
-  // const meals = useLocation()
-  console.log(location.state);
+  
+  props.funcNav(true);
 
   return (
     <StyledDiv style={{ backgroundColor: "#04ADBF", color: "#023373" }}>
